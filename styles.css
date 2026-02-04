@@ -1,0 +1,147 @@
+body {
+    background-color: black;
+}
+
+/* Futuristic Name Modal Styles */
+.name-modal {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(81, 166, 0, 0.2));
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.name-modal-content {
+    background: linear-gradient(135deg, #1a1a1a, #0a2a0a);
+    border: 2px solid #51A600;
+    border-radius: 15px;
+    padding: 40px;
+    text-align: center;
+    min-width: 350px;
+    box-shadow: 0 0 30px rgba(81, 166, 0, 0.6), inset 0 0 20px rgba(81, 166, 0, 0.1);
+    animation: modalGlow 2s ease-in-out infinite;
+}
+
+.name-modal-content h2 {
+    font-family: "Turret Road", sans-serif;
+    font-weight: 700;
+    color: #51A600;
+    margin-bottom: 25px;
+    filter: drop-shadow(0 0 10px lime);
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+#nameInput {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    font-family: "Audiowide", cursive;
+    font-size: 16px;
+    background-color: rgba(81, 166, 0, 0.1);
+    border: 2px solid #51A600;
+    border-radius: 8px;
+    color: #51A600;
+    box-shadow: 0 0 15px rgba(81, 166, 0, 0.3);
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+#nameInput:focus {
+    outline: none;
+    background-color: rgba(81, 166, 0, 0.2);
+    box-shadow: 0 0 25px rgba(81, 166, 0, 0.6), inset 0 0 10px rgba(81, 166, 0, 0.2);
+    border-color: lime;
+}
+
+#nameInput::placeholder {
+    color: rgba(81, 166, 0, 0.6);
+}
+
+.modal-btn {
+    width: 100%;
+    padding: 12px 20px;
+    font-family: "Silkscreen", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #51A600, #6BB000);
+    color: black;
+    border: 2px solid lime;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(81, 166, 0, 0.5);
+    letter-spacing: 1px;
+}
+
+.modal-btn:hover {
+    background: linear-gradient(135deg, #6BB000, #7FCC00);
+    box-shadow: 0 0 30px rgba(81, 166, 0, 0.8), 0 0 15px lime;
+    transform: scale(1.05);
+}
+
+.modal-btn:active {
+    transform: scale(0.98);
+}
+
+@keyframes modalGlow {
+    0%, 100% {
+        box-shadow: 0 0 30px rgba(81, 166, 0, 0.6), inset 0 0 20px rgba(81, 166, 0, 0.1);
+    }
+    50% {
+        box-shadow: 0 0 40px rgba(81, 166, 0, 0.8), inset 0 0 25px rgba(81, 166, 0, 0.2);
+    }
+}
+
+.name-modal.hidden {
+    display: none;
+}
+
+h1 {
+  font-family: "Turret Road", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #51A600;
+  text-align: center;
+  padding: 25px;
+}
+
+.row {
+    padding: 15px;
+text-align: center;
+}
+.card-body {
+    background-color: #51A600;
+    filter: drop-shadow(3px 3px 2px lime);
+    font-family: "Audiowide", cursive;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h2 {
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #51A600;
+  filter: drop-shadow(2px 2px 1px lime);
+}
+
+footer {
+    font-family: "Audiowide", cursive;
+    font-size: 16px;
+    color: black;
+    background-color: #51A600;
+    text-align: center;
+    padding: 15px;
+}
+footer h3 {
+    filter: drop-shadow(2px 2px 1px white);
+    font-weight: 400;
+}
