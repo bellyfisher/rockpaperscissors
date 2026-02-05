@@ -1,6 +1,6 @@
 let yourName = "";
 
-// Get modal and input elements
+// Get modal and input elements - FROM LINES 3 TO 30, I USED AI TO HELP ME WRITE THIS CODE
 const nameModal = document.getElementById("nameModal");
 const nameInput = document.getElementById("nameInput");
 const nameSubmitBtn = document.getElementById("nameSubmitBtn");
@@ -9,6 +9,7 @@ const nameSubmitBtn = document.getElementById("nameSubmitBtn");
 function submitName() {
     if (nameInput.value.trim() !== "") {
         yourName = nameInput.value.trim();
+        document.getElementById("playerName").textContent = yourName;
         nameModal.classList.add("hidden");
     }
 }

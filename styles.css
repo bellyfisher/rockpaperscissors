@@ -109,11 +109,12 @@ h1 {
   color: #51A600;
   text-align: center;
   padding: 25px;
+  filter: drop-shadow(2px 2px 1px white);
 }
 
 .row {
-    padding: 15px;
-text-align: center;
+    padding: 8px;
+    text-align: center;
 }
 .card-body {
     background-color: #51A600;
@@ -132,6 +133,22 @@ h2 {
   color: #51A600;
   filter: drop-shadow(2px 2px 1px lime);
 }
+.results {
+    background-color: #51A600;
+    text-align: center;
+    margin-top: 20px;
+    filter: drop-shadow(2px 2px 1px lime);
+    border-radius: 35px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: lime;
+    padding: 25px;
+}
+.results h2 {
+    font-family: "Audiowide", cursive;
+    font-weight: 400px;
+    color: black;
+}
 
 footer {
     font-family: "Audiowide", cursive;
@@ -144,4 +161,75 @@ footer {
 footer h3 {
     filter: drop-shadow(2px 2px 1px white);
     font-weight: 400;
+}
+
+/* Make all choice images the same height and give buttons a rounded lime background */
+.images {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 6px;
+}
+
+.choice-btn {
+    background: linear-gradient(135deg, #6BB000, #51A600);
+    border: 2px solid lime;
+    border-radius: 14px;
+    padding: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 12px rgba(81, 166, 0, 0.22);
+    cursor: pointer;
+    transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.choice-btn img {
+    height: 88px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+    pointer-events: none;
+}
+
+.choice-btn:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 18px rgba(81, 166, 0, 0.30);
+}
+
+.choice-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(81,166,0,0.14);
+}
+
+/* Reduce default <hr> spacing so cards sit closer to choices */
+hr {
+    margin: 8px 0;
+    border: 0;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(81,166,0,0.15), rgba(81,166,0,0.35));
+}
+.reset-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-family: "Silkscreen", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    background: black;
+    color: lime;
+    border: 2px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(81, 166, 0, 0.5);
+    letter-spacing: 1px;
+}
+
+.reset-btn:hover {
+    background: lime;
+    color: black;
+    box-shadow: 0 0 30px rgba(81, 166, 0, 0.8), 0 0 15px lime;
+    transform: scale(1.05);
 }

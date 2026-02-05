@@ -34,28 +34,60 @@
 
         <main>
             <h1><u>* Welcome to Rock, Paper, Scissors! *</u></h1>
+        
         <div class="row">
+        <div class="col-6">
+            <div class="images">
+                <button class="choice-btn" id="rockBtn">
+                    <img src="leftrock.png" alt="Rock" />
+                </button>
+                <button class="choice-btn" id="paperBtn">
+                    <img src="leftpaper.png" alt="Paper" />
+                </button>
+                <button class="choice-btn" id="scissorsBtn">
+                    <img src="leftscissor.png" alt="Scissors" />
+                </button>
+            </div>
+        </div>
+                <div class="col-6">
+            <div class="images">
+                <button class="choice-btn" id="scissorsBtn">
+                    <img src="rightscissor.png" alt="Scissors" />
+                </button>
+                <button class="choice-btn" id="paperBtn">
+                    <img src="rightpaper.png" alt="Paper" />
+                </button>
+                <button class="choice-btn" id="rockBtn">
+                    <img src="rightrock.png" alt="Rock" />
+                </button>
+            </div>
+        </div>
+        </div>
+
+        <hr>
+            <div class="row">
             <div class="col-6">
                  <div class="card">
                             <div class="card-body">
                             </div>
                 </div>
-                <h2>{User}</h2>
+                <h2 id="playerName"></h2>
             </div>
             <div class="col-6">
                                  <div class="card">
                             <div class="card-body">
                             </div>
                 </div>
-                <h2>{CPU}</h2>
+                <h2>Computer</h2>
             </div>
         </div>
         <div class="results">
-        <h2>And the winner of <b>Rock, Paper, Scissors <i>is</i></b>...<br>${winner}!<br>Play again?</h2>
+        <h2>And the winner of <b>Rock, Paper, Scissors <i>is</i></b>...<br>${winner}!</h2>
+        <button id="resetBtn" class="reset-btn">Play again?</button>
         </div>
         </main>
         <footer>
-            <h3>© Belly Cubley, 2026 WDPP2<br>For this project, or how to play;<br>Select from one of the buttons on the <b>User</b> side of the website, which shows rock, paper, or scissors. The <b>computer</b> will select its choice, and you will play each other. The best out of three wins!</h3>
+            <h3>© Belly Cubley, 2026 WDPP2<br>For this project, or how to play;<br>Select from one of the buttons on the side of the website with <b>your name</b>, which shows rock, paper, or scissors. The <b>computer</b> will select its choice, and you will play each other. The best out of three wins!</h3>
         </footer>
         <!-- Bootstrap JavaScript Libraries -->
         <script
