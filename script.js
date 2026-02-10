@@ -33,16 +33,24 @@ const userChoice = ['rock', 'paper', 'scissors'];
 
 const getComputerChoice = () => {
  const randomNumber = Math.floor(Math.random() * 3);
- if (randomNumber === 0) {
-   return 'rightrock.png';
- } else if (randomNumber === 1) {
-   return 'rightpaper.png';
- } else {
-   return 'rightscissor.png';
- }
+ let answer, image;
+        
+    switch(randomNumber){
+        case 0:
+        answer = 'Rock!'
+        image = 'rightrock.png'
+break;
+        case 1:
+        answer = 'Paper!'
+        image = 'rightpaper.png'
+break;
+        case 2:
+        answer = 'Scissors!'
+        image = 'rightscissors.png'
+break;
+    }
+    return {answer, image};
 };
-
-
 
 let winner;
     if (wins === 2) {
