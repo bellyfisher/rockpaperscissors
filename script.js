@@ -28,7 +28,7 @@ nameInput.addEventListener("keypress", function(event) {
 window.addEventListener("load", function() {
     nameInput.focus();
 });
-
+// AI ENDS HERE
 const userChoice = ['rock', 'paper', 'scissors'];
 
 const getComputerChoice = () => {
@@ -37,26 +37,18 @@ const getComputerChoice = () => {
         
     switch(randomNumber){
         case 0:
-        answer = 'Rock!'
+        answer = 'Computer chooses Rock!'
         image = 'rightrock.png'
 break;
         case 1:
-        answer = 'Paper!'
+        answer = 'Computer chooses Paper!'
         image = 'rightpaper.png'
 break;
         case 2:
-        answer = 'Scissors!'
+        answer = 'Computer chooses Scissors!'
         image = 'rightscissors.png'
 break;
     }
     return {answer, image};
 };
 
-let winner;
-    if (wins === 2) {
-        winner = "user";
-    } 
-    else {
-        title = "Computer";
-    }
-result.style.display = "block";
