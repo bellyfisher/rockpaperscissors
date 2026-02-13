@@ -29,7 +29,7 @@ window.addEventListener("load", function() {
     nameInput.focus();
 });
 // AI ENDS HERE
-const userChoice = ['rock', 'paper', 'scissors'];
+const choices = ['rock', 'paper', 'scissors'];
 
 const getComputerChoice = () => {
  const randomNumber = Math.floor(Math.random() * 3);
@@ -51,4 +51,6 @@ break;
     }
     return {answer, image};
 };
+
+// paper > rock, scissors > paper, rock > scissors
 
