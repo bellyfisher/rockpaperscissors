@@ -51,6 +51,23 @@ break;
     }
     return {answer, image};
 };
+const determineWinner = (playerChoice, computerChoice) => {
+
+    if (playerChoice === computerChoice) {
+        return "tie";
+    }
+
+    if (
+        (playerChoice === "rock" && computerChoice === "scissors") ||
+        (playerChoice === "paper" && computerChoice === "rock") ||
+        (playerChoice === "scissors" && computerChoice === "paper")
+    ) {
+        return "player";
+    }
+
+    return "computer";
+};
+
 
 // paper > rock, scissors > paper, rock > scissors
 
