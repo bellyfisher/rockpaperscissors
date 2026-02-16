@@ -157,6 +157,8 @@ footer {
     background-color: #51A600;
     text-align: center;
     padding: 15px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 footer h3 {
     filter: drop-shadow(2px 2px 1px white);
