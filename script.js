@@ -30,7 +30,6 @@ window.addEventListener("load", function() {
 });
 // AI ENDS HERE
 const choices = ['rock', 'paper', 'scissors'];
-
 const getComputerChoice = () => {
  const randomNumber = Math.floor(Math.random() * 3);
  let answer, image;
